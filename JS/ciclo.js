@@ -3,7 +3,7 @@ function getRandom() {
 }
 
 var randomNumber = getRandom();
-var x = 0;
+var x = 1;
 
 while(randomNumber != 50){
     randomNumber = getRandom();
