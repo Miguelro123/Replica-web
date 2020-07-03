@@ -1,11 +1,13 @@
 function getRandom() {
   return Math.floor(Math.random() * 100);
 }
+
 var randomNumber = getRandom();
 var x = 0;
-while(randomNumber <= 50){
-    randomNumber++
-    x ++
+
+while(randomNumber != 50){
+    randomNumber = getRandom();
+    x ++;
 }
 
-console.log("getRandom se repite" + " " + x)
+console.log("EL numero 50 lo encontro despues de " + x + " veces")
