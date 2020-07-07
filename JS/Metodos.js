@@ -43,16 +43,14 @@ otraCadena.split('os')
 
 var colores = ["rojo", "azul ", " verde "] ; 
 
-// length
-
-colores.length; 
-
-colores[colores.length] = "amarillo";
-
 // toString
 
-colores.toString();}
+colores.toString();
 
 colores.push ( "negro", "blanco"); 
 
-colores.pop(); 
+colores.pop();
+
+colores.reverse();
+
+colores.sort();
