@@ -1,0 +1,178 @@
+::-webkit-scrollbar {
+  width: 10px;
+  background: black;
+  border: 1px dotted grey;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+body {
+  background-color: rgb(74, 196, 212);
+}
+
+h2 {
+  color: rgb(233, 162, 21);
+}
+
+/* Container */
+
+.container {
+  width: 90%;
+  margin: 2% 5%;
+  float: left;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Varela Round", sans-serif;
+}
+.container a {
+  color: #d05555;
+}
+.container a:hover {
+  color: #c61b1b;
+}
+
+/* header */
+
+#header {
+  margin-bottom: 4em;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#header select {
+  background-color: rgb(221, 219, 219);
+  font-size: 60px;
+  width: 260px;
+  padding-left: 60px;
+  border-radius: 15px;
+  border: 1px dotted grey;
+  font-family: "Varela Round", sans-serif;
+}
+#header select option {
+  font-size: 35px;
+}
+
+/* Calendario */
+
+#calendario {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#calendario .mes {
+  flex: 0 1 21%;
+  margin-bottom: 3em;
+}
+#calendario .mes::before {
+  content: "ENERO";
+  display: block;
+  font-weight: bold;
+}
+#calendario .mes:nth-child(2)::before {
+  content: "FEBRERO";
+}
+#calendario .mes:nth-child(3)::before {
+  content: "MARZO";
+}
+#calendario .mes:nth-child(4)::before {
+  content: "ABRIL";
+}
+#calendario .mes:nth-child(5)::before {
+  content: "MAYO";
+}
+#calendario .mes:nth-child(6)::before {
+  content: "JUNIO";
+}
+#calendario .mes:nth-child(7)::before {
+  content: "JULIO";
+}
+#calendario .mes:nth-child(8)::before {
+  content: "AGOSTO";
+}
+#calendario .mes:nth-child(9)::before {
+  content: "SEPTIEMBRE";
+}
+#calendario .mes:nth-child(10)::before {
+  content: "OCTUBRE";
+}
+#calendario .mes:nth-child(11)::before {
+  content: "NOVIEMBRE";
+}
+#calendario .mes:nth-child(12)::before {
+  content: "DICIEMBRE";
+}
+#calendario .mes ul {
+  padding: 8px 0;
+  display: flex;
+}
+#calendario .mes ul:first-child {
+  margin-bottom: 25px;
+  border-bottom: 3px solid #820101a8;
+}
+#calendario .mes ul li {
+  list-style-type: none;
+  flex: 1 1 0;
+}
+#calendario .mes ul li.holiday {
+  color: white;
+  border-radius: 35px 0px;
+  font-weight: bold;
+  background-color: #7c0303;
+}
+
+/* more */
+
+#more {
+  margin-top: 2em;
+}
+
+#more h3 {
+  color: white;
+}
+
+#more div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 1920px) {
+  #calendario {
+    font-size: 25px;
+  }
+  #calendario .mes {
+    flex-basis: 30%;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #calendario {
+    font-size: 22px;
+  }
+  #calendario .mes {
+    flex-basis: 47%;
+  }
+}
+@media screen and (max-width: 768px) {
+  #calendario {
+    font-size: 20px;
+  }
+  #calendario .mes {
+    flex-basis: 100%;
+  }
+}
