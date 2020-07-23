@@ -17,8 +17,12 @@ function checkInputs() {
   const passwordValue = password.value.trim();
   const password2Value = password2.value.trim();
 
+  const espacio = usernameValue.indexOf(" ");
+
   if (usernameValue === "") {
     setErrorFor(username, "Username cannot be blank");
+  } else if (espacio === -1) {
+    setErrorFor(username, "Username cannot be one word");
   } else {
     setSuccessFor(username);
   }
