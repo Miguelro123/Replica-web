@@ -1,1 +1,46 @@
-css
+body {
+  background-color: #07f3f3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+h1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputs1 {
+  background-color: rgb(209, 250, 244);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  width: 600px;
+  padding: 10px 20px 10px 10px;
+  max-width: 100%;
+}
+
+input {
+  border: 2px solid #000000;
+  border-radius: 4px;
+  display: block;
+  font-size: 16px;
+  padding: 5px 0px 5px 5px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
